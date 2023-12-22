@@ -37,7 +37,7 @@ public class BankService {
    */
   public boolean withdraw(String accountHolder, double amount) {
     BankAccount account = accounts.get(accountHolder);
-    if (account != null) {
+    if (account != null && account.balance > amount) {
       account.balance -= amount;
       return true;
     }

@@ -30,4 +30,8 @@ public class BankSystemTest {
     assertFalse(couldWithdraw);
   }
 
+
+  // In de withdraw functie van Bankaccount zat een regel om tegengaan van teveel geld opnemen tegen te gaan. In de withdraw functie van Bankservice zat dit niet. Dit toegevoegd.
+
+
 }
