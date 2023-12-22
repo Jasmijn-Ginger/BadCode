@@ -8,6 +8,10 @@ class PersonServiceTest {
   /**
    * De PersonService zou alleen de unieke personen moeten toevoegen en duplicaten negeren.
    */
+
+  //Wat wil je afvangen? Wil je dat er niet twee dezelfde objecten zijn met dezelfde info? Oftwel geen Person en Person met zelfde info. Of wil je dat er niet twee keer Person met locatie x in de lijst staan.
+// Opgelost door person.toString te gebruiken. Hierdoor vergelijk je niet meer de locatie maar de inhoud
+
   @Test
   void testPersonService(){
     PersonService personService = new PersonService();
@@ -35,5 +39,7 @@ class PersonServiceTest {
 
     assertEquals(15, personService.size());
   }
+
+
 
 }
